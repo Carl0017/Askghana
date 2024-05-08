@@ -1,0 +1,57 @@
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 calc(33.33% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  :nth-child(3n + 1),
+  :nth-child(3n + 1):last-child {
+    flex-basis: auto;
+  }
+
+  .image {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    padding: 20px;
+    background-color: #fff;
+
+    h2 {
+      @include League(700);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      @include Poppins(500, normal);
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .navbrandBtn {
+      margin-top: 1rem;
+      background-color: transparent;
+      border: 2px solid #036803;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      @include Montserrat(600);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

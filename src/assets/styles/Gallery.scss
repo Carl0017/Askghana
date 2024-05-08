@@ -1,0 +1,16 @@
+@import "./resets";
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+body {
+  background-color: $background;
+  width: 100%;
+}
+
+
+
+.w3-row-padding img {margin-bottom: 9px}
+
+
+@media screen and (max-width: 768px) {}

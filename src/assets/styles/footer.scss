@@ -1,0 +1,112 @@
+@import "./resets";
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(210deg 21.61% 93.16% / 50%);
+    margin-top: 5rem;
+
+    .Wrapper {
+        @include flex(row wrap, 5rem, center);
+        align-items: flex-start;
+        color:hsl(235 12% 21% / 1);
+        width: fit-content;
+        padding-top: 3rem;
+
+        .FooterAbout {
+            width: 30%;
+
+            h3{
+                @include League(800);
+                color: #2F303C;
+                font-size: 1.3rem;
+                opacity: .4;
+            }
+            h4 {
+                @include League(600);
+                font-size: .999rem;
+                width: 80%;
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .Pages {
+            
+            h3{
+                @include League(800);
+                color: #2F303C;
+                font-size: 1.3rem;
+                opacity: .4;
+            }
+            ul {
+                li {
+                    list-style: none;
+                    @include League(600);
+                    font-size: .999rem;
+                }
+            }
+        }
+
+        #Contact {
+            @include League(600);
+            h2 {
+                @include League(600);
+                color: #2F303C;
+                font-size: 1.3rem;
+                opacity: .4;
+            }
+
+            h3 {
+                @include League(600);
+                font-size: .999rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    footer{
+        padding: 2rem;
+
+        .Wrapper{
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            .FooterAbout {
+                @include flex(column , 1rem, space-between);
+                text-align: center;
+                width: 100%;   
+
+                h4 {
+                    @include League(600);
+                    width: 100%;
+                } 
+
+                img {
+                    width: 150px;
+                }
+            }
+    
+            .Pages {
+            width: 100%;
+            text-align: center
+            }
+    
+            #Contact {
+                h2 {
+                    @include League(600);
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

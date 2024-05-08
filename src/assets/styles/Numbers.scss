@@ -1,0 +1,46 @@
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+.numbers{
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    border-radius: 1rem;
+    padding:  .5rem 0 .5rem 0;
+   
+
+    h1{
+    @include League(700);
+}
+
+#numbersCon{
+    @include flex(row wrap, 0, space-around);
+    text-align: center;
+
+    h1{
+        font-size: 1.5rem;
+        color: #036803;
+    }
+}
+
+}
+
+.number-counter{
+    span{
+      @include Poppins(600, normal);
+      font-size: 5rem;
+    }
+}   
+
+@media screen and (max-width: 768px){
+   .numbers{
+    margin: .4rem;
+
+    #numbersCon{
+        @include flex(column, 0, space-around);
+    }   
+   }
+
+}

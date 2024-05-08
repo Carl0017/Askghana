@@ -1,0 +1,406 @@
+@import "./resets";
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+body {
+  background-color: $background;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  @include flex(row, 2rem, space-between);
+  padding: 0 2rem;
+
+  .logo {
+    #logo_Main {
+      width: 100px;
+      height: 60px;
+    }
+  }
+
+  .nav-elements ul {
+    @include flex(row, 2rem, space-between);
+
+    li {
+      list-style: none;
+      text-decoration: none;
+      color: $textBlack;
+      @include Poppins(300, normal);
+    }
+
+    #active {
+      font-weight: 650;
+      color: $brandPrimary;
+    }
+ 
+    .navbrandBtn {
+      background-color: $brandPrimaryLight1;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.7rem 2rem;
+      color: #fff;
+      @include Montserrat(600);
+      display: none;
+    }
+  }
+
+  .brandBtn {
+    background-color: $brandPrimaryLight1;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    @include Montserrat(600);
+  }
+
+  #menu-icon {
+    display: none;
+    color: $brandPrimary;
+  }
+}
+
+.App {
+  background-image: url("../images/askGhanaa-bg01.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  padding-top: 1rem;
+
+  #contentWrapper {
+    @include flex(row, 20px, space-between);
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 10rem 0 10rem;
+
+    #textCon {
+      flex: 1;
+
+      h1 {
+        @include League(700);
+        font-size: 70px;
+      }
+
+      p {
+        @include Poppins(300, normal);
+        width: 60%;
+        padding: 2rem 0 2rem 0;
+      }
+
+      #donateBtn {
+        background-color: $brandPrimaryLight1;
+        border: none;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        color: #fff;
+        @include Montserrat(600);
+      }
+    }
+
+    #illusCon {
+      width: 50%;
+    }
+  }
+}
+
+.programWrapper {
+  @include flex(column, 1rem, space-between);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  #programText {
+    @include flex(column, 1rem, space-between);
+    text-align: center;
+    h1 {
+      @include League(700);
+      font-size: 3rem;
+    }
+
+    p {
+      @include Poppins(400, normal);
+      width: 60%;
+      line-height: 1rem;
+    }
+  }
+
+  #programCards {
+    @include flex(row wrap, 1rem, space-between);
+    padding: 0 8rem;
+  }
+}
+
+.about {
+  @include flex(row, 1rem, space-between);
+  margin: 7rem 9.5rem 4rem 9.5rem;
+
+  span {
+    @include Poppins(600, normal);
+    color: #036803;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    @include League(700);
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+
+  p {
+    @include Poppins(400, normal);
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid #036803;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    @include Montserrat(600);
+  }
+}
+
+.PartnersWrapper {
+  text-align: center;
+
+  h1 {
+    @include League(700);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+  
+  .App {
+    height: max-content;
+    #contentWrapper {
+      padding: 0 5rem 0 5rem;
+      #textCon {
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        p {
+          width: 90%;
+        }
+      }
+
+      #illusCon {
+        width: max-content;
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+  .programWrapper {
+    #programCards {
+      padding: 0 2rem;
+    }
+  }
+
+  .about {
+    margin: 2rem;
+
+   
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  header {
+    padding: 0 1rem;
+    .logo {
+      margin-right: auto;
+    }
+
+    .nav-elements {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: $background;
+      width: 0px;
+      height: calc(100vh - 60px);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+    }
+
+    .nav-elements.active {
+      width: 100%;
+    }
+
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-right: unset;
+        margin-top: 22px;
+      }
+
+      .navbrandBtn {
+        display: block;
+      }
+    }
+
+    .brandBtn {
+      display: none;
+    }
+
+    #menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .App{
+    #contentWrapper {
+      padding: 0 5rem 0 5rem;
+      #textCon {
+        h1 {
+          font-size: 2.7rem;
+        }
+        h1 {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      #illusCon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 1rem;
+    .logo {
+      margin-right: auto;
+    }
+
+    .nav-elements {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: $background;
+      width: 0px;
+      height: calc(100vh - 60px);
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+    }
+
+    .nav-elements.active {
+      width: 100%;
+    }
+
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-right: unset;
+        margin-top: 22px;
+      }
+
+      .navbrandBtn {
+        display: block;
+      }
+    }
+
+    .brandBtn {
+      display: none;
+    }
+
+    #menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .App {
+    background-position: bottom right;
+    height: max-content;
+
+    #contentWrapper {
+      @include flex(column-reverse, 2rem, space-between);
+      padding: 2rem;
+      width: 100%;
+
+      #textCon {
+        width: 100%;
+        h1 {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      #illusCon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  .programWrapper {
+    margin-top: 1rem;
+    #programText {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        width: 95%;
+      }
+    }
+    #programCards {
+      @include flex(column, 2rem, space-between);
+      padding: 0 1rem;
+    }
+  }
+
+  .about {
+    @include flex(column, 1rem, space-between);
+    margin: 1rem;
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      text-align: center;
+      width: 95%;
+    }
+  }
+
+  .wrap {
+    margin-top: 45rem;
+  }
+}

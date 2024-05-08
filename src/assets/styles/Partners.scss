@@ -1,0 +1,31 @@
+@import "./resets";
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+.Partners {
+  margin-top: 2rem;
+
+  @include flex(column, 1rem, space-between);
+  .partnersLogo {
+    @include flex(row wrap, 2rem, space-between);
+    height: 150px;
+    margin-top: -2.5rem;
+
+    img {
+      flex: 1;
+      max-width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partnersLogo {
+    @include flex(row wrap, 2rem, space-around);
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
