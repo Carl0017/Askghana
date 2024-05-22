@@ -9,7 +9,7 @@ body {
 
 .donations {
   position: relative;
-  background-image: url("../images/askGhanaa-about.png");
+  background-image: url("../images/askGhana-donation.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -33,6 +33,38 @@ body {
       @include League(700);
       font-size: 3rem;
       color: #fff;
+    }
+  }
+}
+
+.paymentWrapper{
+  @include flex(column,1rem, space-between);
+  align-items: center;
+  
+  h3{
+    width: 30%;
+    font-size:1.2rem;
+    text-align: center;
+    @include League(600);
+  }
+
+  form{
+    @include flex(column,1rem,space-between);
+
+    input{
+      padding: .4rem 1rem;
+      @include League(600);
+      outline: none;
+    }
+
+    button{
+      background: $brandPrimary;
+      color: #fff;
+      @include League(500);
+      border: none;
+      outline: none;
+      padding: .4rem 2rem;
+      border-radius: .4rem;
     }
   }
 }

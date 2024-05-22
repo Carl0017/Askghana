@@ -1,6 +1,9 @@
+import React, {useState, useEffect} from "react";
+
 import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
 import "./assets/styles/App.scss";
+import Logo from "./assets/images/askGhanaa-logo.png";
 import Illus1 from "./assets/images/askGhanaa-hp01.svg";
 import ProgramCards from "./components/ProgramCards";
 import MenstrualIllus from "./assets/images/askGhanaa-p01.jpg";
@@ -12,10 +15,39 @@ import Numbers from "./components/Numbers";
 import Footer from "./components/Footer";
 
 
+const Popup = ({ title, message, onClose }) => {
+  return (
+    <div className="popup">
+      <div className="popup-inner">
+        <img src={Logo} alt="" />
+        <h2>{title}</h2>
+        <h3>{message}</h3>
+        <button onClick={onClose}>Hurray 🎉</button>
+      </div>
+    </div>
+  );
+};
+
+
+
 function App() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
       <div className="App">
+
+      {showPopup && <Popup title="🎉 Celebrate Our 5th Anniversary! 🎉" message="We are thrilled to mark 5 years of making a difference! Thanks to supporters like you, our journey has been impactful and inspiring. Join us in celebrating this milestone and continue to be part of our mission to create positive change." onClose={handleClosePopup} />}
+
         <Navbar />
 
         <div id="contentWrapper">    

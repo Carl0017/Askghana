@@ -18,9 +18,20 @@ function Donation() {
         </div>
       </div>
 
+    <div className="paymentWrapper">
+      <h3>
+      How much would you like to donate? As a contributor to ASK Ghana we make sure your donation goes directly to supporting our cause.
+      </h3>
+
       <form>
-        
+        <input type="number" placeholder="Enter An Amount" />
+        <button>
+          Continue
+        </button>
       </form>
+
+    </div>
+
     </>
   );
 }
