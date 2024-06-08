@@ -1,0 +1,36 @@
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+.Teamcard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  
+  img{
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+  }
+
+  .content {
+    padding: 20px;
+    background-color: #fff;
+
+    h2 {
+      @include League(700);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      @include Poppins(500, normal);
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
+}
+

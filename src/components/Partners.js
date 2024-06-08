@@ -5,6 +5,7 @@ import NLA from '../assets/images/NLA.png';
 import WAYLEAD from '../assets/images/waylead.png';
 import Nya from '../assets/images/Nya.png';
 import TLC from "../assets/images/tlc.png";
+import BLS from "../assets/images/Bnice Logistics.svg";
 
 function Partners() {
   return (
@@ -16,6 +17,7 @@ function Partners() {
             <img src={WAYLEAD} alt='Waylead Ghana' />
             <img src={Nya} alt='National Health Insurance Scheme' />
             <img src={TLC} alt='TLC Homecare' />
+            <img src={BLS} alt='Bnice Logistics & Supplies' />
         </div>
     </div>
   )

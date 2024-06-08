@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../assets/styles/teamCard.scss';
 const Card = ({ backgroundImage, title, description }) => {
 
     return (
-      <div className="card">
-        <div className="image" style={{backgroundImage: `url(${backgroundImage})`}}></div>
+      <div className="Teamcard">
+        <img src={backgroundImage} alt='' />
         <div className="content">
           <h2>{title}</h2>
           <p>{description}</p>

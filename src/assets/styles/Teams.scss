@@ -38,9 +38,16 @@ body {
 }
 
 .TeamsWrap {
-  @include flex(row wrap, 2rem, space-between);
+  @include flex(row, '', center);
+  align-items:center;
   padding: 1rem;
   margin-top: 2rem;
+
+  .teamwraplist{
+    width: 100%;
+    @include flex(row wrap, 2rem, center);
+    align-items:center;
+  }
 }
 
 @media screen and (max-width: 768px) {
