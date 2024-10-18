@@ -83,7 +83,7 @@ function App() {
 
         <div className="aboutText">
           <span>ABOUT ASK GHANA</span>
-          <h1> an NGO dedicated to creating positive change.</h1>
+          <h1>an NGO dedicated to creating positive change.</h1>
           <p>
             Through our collective efforts and unwavering commitment, we strive
             to build a more equitable and inclusive Ghana for all. As an NGO,

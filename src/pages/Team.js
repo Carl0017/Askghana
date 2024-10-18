@@ -8,6 +8,7 @@ import Sharon from "../assets/images/teamImages/Sharon.png";
 //import Anaa from "../assets/images/teamImages/Anna.png";
 //import Natasha from "../assets/images/teamImages/Natasha.png";
 import Rejoice from "../assets/images/teamImages/Rejoice.png";
+import rejoice from "../assets/images/teamImages/rejoice.jpeg"
 //import Priscilla from "../assets/images/teamImages/Priscilla_Ab.png";
 
 function Team() {
@@ -59,7 +60,8 @@ function Team() {
             description="COUNSELLING CORDINATOR"
           />
           <Card
-            title="MS. FERRON FAFA DZIKUNU"
+            backgroundImage={rejoice}
+            title="MS. Rejoice Manuela Adukw3i Quaye"
             description="LEAD – TEEN ADVISOR"
           />
         </div>
