@@ -43,13 +43,22 @@ function Team() {
             description="DIR. COMMUNICATION"
           />
           <Card
+            
             title="MRS. ANNA BELINDA BAIDOO"
             description="DIR. ADMINISTRATION"
           />
-          <Card title="MS. BEATRICE FOBI" description="PROJ. CORDINATOR" />
+          <Card 
+          backgroundImage={}
+          title="MS. BEATRICE FOBI" 
+          description="PROJ. CORDINATOR" 
+          />
           <Card
             title="MS. PRISCILLA ABENA"
             description="BUNDGET AND FINANCE CORDINATOR"
+          />
+          <Card
+            title="MS. Bernice Fobi"
+            description="MONITORING AND EVALUATION OFFICER"
           />
           <Card
             title="MS. PRINCESS MENSAH"
