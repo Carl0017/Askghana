@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import "../assets/styles/Donation.scss";
+import Navbar from "../../components/Navbar";
+import "./Donation.scss";
 
 function Donation() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-import Navbar from "../components/Navbar";
-import "../assets/styles/About.scss";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import "./About.scss";
+import Footer from "../../components/Footer";
 
 function About() {
   const [showMore, setShowMore] = useState(false);

@@ -1,18 +1,18 @@
 import React, {useState, useEffect} from "react";
 
-import Navbar from "./components/Navbar";
+import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
-import "./assets/styles/App.scss";
-import Logo from "./assets/images/askGhanaa-logo.png";
-import Illus1 from "./assets/images/askGhanaa-hp01.svg";
-import ProgramCards from "./components/ProgramCards";
-import MenstrualIllus from "./assets/images/askGhanaa-p01.jpg";
-import HealthIllus from "./assets/images/askGhanaa-p02.jpg";
-import RecomendIllus from "./assets/images/askGhanaa-p03.jpg";
-import About from "./assets/images/askGhanaa.about.svg";
-import Partners from "./components/Partners";
-import Numbers from "./components/Numbers";
-import Footer from "./components/Footer";
+import "./App.scss";
+import Logo from "../../assets/images/askGhanaa-logo.png";
+import Illus1 from "../../assets/images/askGhanaa-hp01.svg";
+import ProgramCards from "../../components/ProgramCards";
+import MenstrualIllus from "../../assets/images/askGhanaa-p01.jpg";
+import HealthIllus from "../../assets/images/askGhanaa-p02.jpg";
+import RecomendIllus from "../../assets/images/askGhanaa-p03.jpg";
+import About from "../../assets/images/askGhanaa.about.svg";
+import Partners from "../../components/Partners";
+import Numbers from "../../components/Numbers";
+import Footer from "../../components/Footer";
 
 
 

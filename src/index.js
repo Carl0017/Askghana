@@ -5,14 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
-import Programes from './pages/What-we-do';
-import Donations from './pages/Donation';
-import About from './pages/About';
-import Gallery from './pages/Gallery';
-import PartnersPage from './pages/Partners';
-import Team from './pages/Team';
-import Contact from './pages/Contact';
+import App from './pages/Home/App';
+import Programes from './pages/WhatWeDo/What-we-do';
+import Donations from './pages/Donation/Donation';
+import About from './pages/About/About';
+import Gallery from './pages/Gallery/Gallery';
+import PartnersPage from './pages/Partners/Partners';
+import Team from './pages/Team/Team';
+import Contact from './pages/Contact/Contact';
+import Campaigns from './pages/Campaigns/App'
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <Contact />
+  },
+
+  {
+    path: "campaigns",
+    element: <Campaigns />
   }
 
 ]);

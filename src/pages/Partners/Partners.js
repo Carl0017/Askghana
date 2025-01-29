@@ -1,8 +1,8 @@
 import React from "react";
-import "../assets/styles/PartnersPage.scss";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Partners from "../components/Partners";
+import "./PartnersPage.scss";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Partners from "../../components/Partners";
 function PartnersPage() {
   return (
     <>

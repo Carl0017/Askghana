@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import SegmentIcon from "@mui/icons-material/Segment";
-import "../assets/styles/App.scss";
+import "../assets/styles/navbar.scss";
 import Logo from "../assets/images/askGhanaa-logo.png";
 
 function Navbar() {
@@ -79,7 +79,7 @@ function Navbar() {
             </li>
             
             <li>
-              <Link to="/" style={{ color: "#222831", textDecoration: "none" }}>
+              <Link to="/campaigns" style={{ color: "#222831", textDecoration: "none" }}>
                 Campaigns
               </Link>
             </li>

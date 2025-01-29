@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import "../assets/styles/Teams.scss";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Card from "../../components/Card";
+import "./Teams.scss";
 
-import Sharon from "../assets/images/teamImages/Sharon.png";
-//import Anaa from "../assets/images/teamImages/Anna.png";
-//import Natasha from "../assets/images/teamImages/Natasha.png";
-import Rejoice from "../assets/images/teamImages/Rejoice.png";
-import rejoice from "../assets/images/teamImages/rejoice.jpeg"
-//import Priscilla from "../assets/images/teamImages/Priscilla_Ab.png";
+import Sharon from "../../assets/images/teamImages/Sharon.png";
+//import Anaa from "../../assets/images/teamImages/Anna.png";
+//import Natasha from "../../assets/images/teamImages/Natasha.png";
+import Rejoice from "../../assets/images/teamImages/Rejoice.png";
+import rejoice from "../../assets/images/teamImages/rejoice.jpeg"
+//import Priscilla from "../../assets/images/teamImages/Priscilla_Ab.png";
 
 function Team() {
   return (
@@ -48,7 +48,7 @@ function Team() {
             description="DIR. ADMINISTRATION"
           />
           <Card 
-          backgroundImage={}
+          //backgroundImage={}
           title="MS. BEATRICE FOBI" 
           description="PROJ. CORDINATOR" 
           />

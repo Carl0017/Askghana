@@ -1,0 +1,9 @@
+@import "../../assets/styles/resets";
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/reuseable";
+
+body {
+  background-color: $background;
+  width: 100%;
+}

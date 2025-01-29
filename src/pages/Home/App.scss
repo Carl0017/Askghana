@@ -1,13 +1,14 @@
-@import "./resets";
-@import "./fonts";
-@import "./colors";
-@import "./reuseable";
+@import "../../assets/styles/resets";
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/reuseable";
 
 body {
   background-color: $background;
   width: 100%;
 }
 
+/**
 header {
   width: 100%;
   @include flex(row, 2rem, space-between);
@@ -60,9 +61,10 @@ header {
     color: $brandPrimary;
   }
 }
+  **/
 
 .App {
-  background-image: url("../images/askGhanaa-bg01.svg");
+  background-image: url("../../assets/images/askGhanaa-bg01.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;

@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import "../assets/styles/We-do.scss";
-import WedoCards from "../components/WedoCards";
-import MenstrualIllus from "../assets/images/askGhanaa-p01.jpg";
-import HealthIllus from "../assets/images/askGhanaa-p02.jpg";
-import RecomendIllus from "../assets/images/askGhanaa-p03.jpg";
-import IctIllus from "../assets/images/askGhanaa-ICT.jpg";
-import EduIllus from "../assets/images/IMG-20240318-WA0053.jpg";
-import LiveIllus from "../assets/images/IMG-20240312-WA0014.jpg";
-import DisIllus from "../assets/images/IMG-20240318-WA0047.jpg";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import "./We-do.scss";
+import WedoCards from "../../components/WedoCards";
+import MenstrualIllus from "../../assets/images/askGhanaa-p01.jpg";
+import HealthIllus from "../../assets/images/askGhanaa-p02.jpg";
+import RecomendIllus from "../../assets/images/askGhanaa-p03.jpg";
+import IctIllus from "../../assets/images/askGhanaa-ICT.jpg";
+import EduIllus from "../../assets/images/IMG-20240318-WA0053.jpg";
+import LiveIllus from "../../assets/images/IMG-20240312-WA0014.jpg";
+import DisIllus from "../../assets/images/IMG-20240318-WA0047.jpg";
+import Footer from "../../components/Footer";
 
 
 

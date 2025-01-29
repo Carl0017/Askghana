@@ -1,0 +1,154 @@
+@import "./resets";
+@import "./fonts";
+@import "./colors";
+@import "./reuseable";
+
+header {
+    width: 100%;
+    @include flex(row, 2rem, space-between);
+    padding: 0 2rem;
+  
+    .logo {
+      #logo_Main {
+        width: 100px;
+        height: 60px;
+      }
+    }
+  
+    .nav-elements ul {
+      @include flex(row, 2rem, space-between);
+  
+      li {
+        list-style: none;
+        text-decoration: none;
+        color: $textBlack;
+        @include Poppins(300, normal);
+      }
+  
+      #active {
+        font-weight: 650;
+        color: $brandPrimary;
+      }
+   
+      .navbrandBtn {
+        background-color: $brandPrimaryLight1;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.7rem 2rem;
+        color: #fff;
+        @include Montserrat(600);
+        display: none;
+      }
+    }
+  
+    .brandBtn {
+      background-color: $brandPrimaryLight1;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.7rem 2rem;
+      color: #fff;
+      @include Montserrat(600);
+    }
+  
+    #menu-icon {
+      display: none;
+      color: $brandPrimary;
+    }
+  }
+
+  
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    header {
+      padding: 0 1rem;
+      .logo {
+        margin-right: auto;
+      }
+  
+      .nav-elements {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: $background;
+        width: 0px;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+      }
+  
+      .nav-elements.active {
+        width: 100%;
+      }
+  
+      .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+  
+        li {
+          margin-right: unset;
+          margin-top: 22px;
+        }
+  
+        .navbrandBtn {
+          display: block;
+        }
+      }
+  
+      .brandBtn {
+        display: none;
+      }
+  
+      #menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+    }  
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0 1rem;
+      .logo {
+        margin-right: auto;
+      }
+  
+      .nav-elements {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: $background;
+        width: 0px;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+      }
+  
+      .nav-elements.active {
+        width: 100%;
+      }
+  
+      .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+  
+        li {
+          margin-right: unset;
+          margin-top: 22px;
+        }
+  
+        .navbrandBtn {
+          display: block;
+        }
+      }
+  
+      .brandBtn {
+        display: none;
+      }
+  
+      #menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+  }
+  
