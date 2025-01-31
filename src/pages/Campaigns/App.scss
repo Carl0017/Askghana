@@ -36,3 +36,116 @@ body {
     }
   }
 }
+
+
+//campaing card
+
+.campCard{
+  @include flex(column, 1rem, center);
+  text-align: left;
+  flex: 1 0 calc(33.33% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.3rem;
+
+  .topSection{
+    @include flex(column, 0, flex-end);
+    align-items: flex-start;
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+
+    .dateCon{
+      @include flex(row,.6rem, start);
+      background: #fff;
+      width: fit-content;
+      border-radius: .5rem;
+      padding: .1rem .6rem;
+
+      svg{
+        color: $brandPrimary;
+        height: 1.2rem;
+      }
+
+      h3{
+        padding: 0;
+        font-size: .8rem;
+        color: $textBlack;
+        @include Poppins(600, normal);
+      }
+    }
+  }
+
+  .middleSection{
+
+   h2{
+    @include Poppins(500, normal);
+    font-size: 1.4rem;
+    color: $brandPrimary;
+   }
+
+   p{
+    @include Poppins(400, normal);
+    color: #494949;
+   }
+
+   .locationDiv{
+    @include flex(row, .6rem, flex-start);
+    margin-top: 1rem;
+    align-items: center;
+
+    svg{
+      color: $brandPrimary;
+    }
+
+    h3{
+      @include Poppins(500, normal);
+      color: #494949;
+      font-size: 1.1rem;
+    }
+  }
+
+  }
+
+  .bottomSection{
+    
+
+    button{
+      @include flex(row, .6rem, space-between);
+      align-items: center;
+      color: $textBlack;
+      @include Poppins(600, normal);
+      background: transparent;
+      border: 2px solid $brandPrimary;
+      padding: .4rem .8rem;
+      border-radius: 10rem;
+
+      .iconWrapper{
+        @include flex(row,0,"");
+        background: $brandPrimary;
+        border-radius: 10rem;
+        padding: .5rem;
+
+        svg{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+ 
+}
+
+
+.campaignWrapper{
+  @include flex(row, 1rem, space-between);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0 20rem;
+
+}

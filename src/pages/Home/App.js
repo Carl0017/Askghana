@@ -34,8 +34,7 @@ function App() {
               PROFILE
             </h1>
             <p>
-            To become a leading advocacy organization that socio-economically empowers the marginalized in Ghana.
-
+              To become a leading advocacy organization that socio-economically empowers the marginalized in Ghana.
             </p>
 
             <button id="donateBtn">
